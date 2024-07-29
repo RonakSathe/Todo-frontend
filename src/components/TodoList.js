@@ -82,7 +82,7 @@ const TodoList = () => {
         )
       }
         {/* Button to add a todo */}
-        
+        <button className='register-button' onClick={()=>navigate('/addTodo')}>Add a new Todo</button>
 
     </div>
     </div>
