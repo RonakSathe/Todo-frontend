@@ -1,0 +1,81 @@
+/* Centering and styling the main container */
+.Centered-division {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f7f7f7; /* Light background color for better contrast */
+  padding: 20px; /* Add padding around the edges */
+}
+
+/* Styling for the main division containing todos */
+.Register-division {
+  width: 100%;
+  margin: auto;
+  max-width: 700px; /* Limit the width for better readability */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #a3c71f; /* White background for the container */
+}
+
+/* Style for the individual todo items */
+.todo-item {
+  background-color: #fff; /* White background for todo items */
+  padding: 25px;
+  width: 80%;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for todo item headings and descriptions */
+.todo-item h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+  padding: 10px 0; /* Fixed padding for title */
+}
+
+.todo-item p {
+  margin: 0;
+  color: #666;
+  padding: 5px 0; /* Fixed padding for description */
+  border: 1px solid bisque;
+}
+
+/* Styling for the inputs in todo items */
+.todo-item input {
+  display: block;
+  width: calc(100% - 20px); /* Full width minus padding */
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button styles */
+.register-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff; /* Blue color for the button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em; /* Make font size a bit larger for readability */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.register-button:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+/* Additional styles for empty state */
+.empty-state {
+  text-align: center;
+  color: #888; /* Light gray for no todos message */
+}
